@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link rel="shortcut icon" type="image/png" href="assets/img/mac.ico">
+
+	<title>MAC Cosmetics</title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper black">
+			<a href="https://www.maccosmetics.com/home" class="brand-logo"><img class="mac-logo" src="assets/img/MAC.png"></a>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<h3 class="col s12 m7 center-align">MAC Quiz</h3>
+			<div class="col s10 offset-s1 m7 quiz">
+				<hr><br>
+				<div class="row"><h4 id="question" class="center-align"></h4></div>
+				<div class="row">
+					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt1" data-index="0"></h5></div>
+					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt2" data-index="1"></h5></div>
+					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt3" data-index="2"></h5></div>
+					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt4" data-index="3"></h5></div>
+				</div>
+			</div>
+			<div class="col s10 offset-s1 m7 result"></div>
+			<div class="col hide-on-small-only offset-m1 m4 z-depth-3 grey lighten-2">
+				<h5>Product Description</h5>
+				<p class="product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class="col s12 m4 offset-m1">
+				<div class="center-align"><a href="https://www.facebook.com/MACcosmetics/" class="social waves-effect waves-light btn light-blue darken-3 white-text"><i class="fab fa-facebook-square fa-lg"></i>&nbsp;&nbsp;&nbsp;Like us on Facebook</a></div>
+				<div class="center-align"><a href="https://www.instagram.com/maccosmetics/" class="social waves-effect waves-light btn grey lighten-3 black-text"><i class="fab fa-instagram fa-lg"></i>&nbsp;&nbsp;&nbsp;Follow us on Instagram</a></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="assets/quiz.js"></script>
+	<script src="assets/script.js"></script>
+</body>
+</html>

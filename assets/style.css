@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+.mac-logo,
+.brand-logo {
+	height: 100%;
+}
+
+.answer	{
+	margin: 15px 0px;
+	padding: 15px 5px;
+	border-radius: 20px; 
+	cursor: pointer;
+}
+
+.answer:hover {
+	background-color: #ee6e73;
+	color: white;
+}
+
+.answerbox {
+	padding-top: 30px;
+}
+
+.social	{
+	margin-top: 20px;
+	width: 100%;
+}
+
+.result {
+	display: none;
+}
+
+body {
+	background-image: url("img/background1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.product {
+	margin: 20px auto;
+}
