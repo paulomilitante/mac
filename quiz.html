@@ -17,6 +17,16 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 	<nav>
 		<div class="nav-wrapper black">
 			<a href="https://www.maccosmetics.com/home" class="brand-logo"><img class="mac-logo" src="assets/img/mac.png"></a>
@@ -43,6 +53,9 @@
 					<h4 id="prodName"></h4>
 					<p id="prodDesc"></p>
 				</div>
+				<div class="col s12">
+					<div class="fb-share-button" data-href="https://mac-quiz.herokuapp.com/quiz.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmac-quiz.herokuapp.com%2Fquiz.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share result on Facebook</a></div>
+				</div>
 			</div>
 			<div class="col hide-on-small-only offset-m1 m4 z-depth-3 grey lighten-2">
 				<h5>Product Description</h5>
@@ -57,7 +70,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="assets/quiz.js"></script>
 	<script src="assets/script.js"></script>
