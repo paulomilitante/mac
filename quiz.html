@@ -11,6 +11,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -29,13 +30,20 @@
 				<hr><br>
 				<div class="row"><h4 id="question" class="center-align"></h4></div>
 				<div class="row">
-					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt1" data-index="0"></h5></div>
-					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt2" data-index="1"></h5></div>
-					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt3" data-index="2"></h5></div>
-					<div class="col s12 l6 center-align"><h5 class="answer z-depth-3" id="opt4" data-index="3"></h5></div>
+					<div class="col s12 l6 center-align"><div class="answer z-depth-3" id="opt1" data-index="0"></div></div>
+					<div class="col s12 l6 center-align"><div class="answer z-depth-3" id="opt2" data-index="1"></div></div>
+					<div class="col s12 l6 center-align"><div class="answer z-depth-3" id="opt3" data-index="2"></div></div>
+					<div class="col s12 l6 center-align"><div class="answer z-depth-3" id="opt4" data-index="3"></div></div>
 				</div>
 			</div>
-			<div class="col s10 offset-s1 m7 result"></div>
+			<div class="col s12 m7 result">
+				<hr><br>
+				<div class="col s12 m6"><img id="prodImg"></div>
+				<div class="col s12 m6 center-align">
+					<h4 id="prodName"></h4>
+					<p id="prodDesc"></p>
+				</div>
+			</div>
 			<div class="col hide-on-small-only offset-m1 m4 z-depth-3 grey lighten-2">
 				<h5>Product Description</h5>
 				<p class="product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -49,7 +57,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="assets/quiz.js"></script>
 	<script src="assets/script.js"></script>

@@ -1,6 +1,9 @@
 var currentQuestion = 0;
 var totalQuestions = quiz.length;
 var answers = [];
+var counts = [];
+var compare = 0;
+var mostFrequent;
 
 function loadQuestion(questionIndex) {
 	var q = quiz[questionIndex];
@@ -17,8 +20,28 @@ $('.answer').click(function(){
 	answers.push(a);
 	
 	if(currentQuestion == totalQuestions-1){
+		for(var i = 0; i < answers.length; i++){
+		var index = answers[i];
+
+			if(!counts[index]){
+				counts[index] = 1;
+			}
+			else {
+				counts[index]++;
+			}
+			if(counts[index] > compare){
+				compare = counts[index];
+				mostFrequent = answers[i];
+			}
+		}
+
+		var r = result[mostFrequent];
+
+		$('#prodName').html(r.product);
+		$('#prodDesc').html(r.description);
+		$('#prodImg').attr('src',r.img);
+
 		$('.quiz').hide();
-		$('.result').html(answers);
 		$('.result').show();
 	}
 	else {
