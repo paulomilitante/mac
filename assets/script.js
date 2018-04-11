@@ -4,6 +4,7 @@ var answers = [];
 var counts = [];
 var compare = 0;
 var mostFrequent;
+var rIndex = $("#result").data('index');
 
 function loadQuestion(questionIndex) {
 	var q = quiz[questionIndex];
@@ -14,12 +15,23 @@ function loadQuestion(questionIndex) {
 	$('#opt4').html(q.option4);
 }
 
+function loadResult(resultIndex) {
+	var r = result[resultIndex];
+
+	$('#prodName').html(r.product);
+	$('#prodDesc').html(r.description);
+	$('#prodImg').attr('src',r.img);
+
+}
+
 
 $('.answer').click(function(){
 	var a = $(this).data('index')
 	answers.push(a);
 	
 	if(currentQuestion == totalQuestions-1){
+
+		
 		for(var i = 0; i < answers.length; i++){
 		var index = answers[i];
 
@@ -35,14 +47,23 @@ $('.answer').click(function(){
 			}
 		}
 
-		var r = result[mostFrequent];
+		console.log(mostFrequent);
 
-		$('#prodName').html(r.product);
-		$('#prodDesc').html(r.description);
-		$('#prodImg').attr('src',r.img);
+		switch(mostFrequent) {
+			case 0:
+				window.location.href = "risk_taker.html";
+				break;
+			case 1:
+				window.location.href = "qween_supreme.html";
+				break;
+			case 2:
+				window.location.href = "power_hungry.html";
+				break;
+			case 3:
+				window.location.href = "mischief_minx.html";
+				break;
+		}
 
-		$('.quiz').hide();
-		$('.result').show();
 	}
 	else {
 		currentQuestion++;
@@ -52,3 +73,4 @@ $('.answer').click(function(){
 });
 
 loadQuestion(currentQuestion);
+loadResult(rIndex);
