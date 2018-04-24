@@ -39,22 +39,22 @@ var quiz = [
 var result = [
 	{
 		"product" : "Risk Taker",
-		"description" : "Cross the lines in the bronzes and loudmouth pinks of Risk Taker. Featuring Eye Shadows in Risky Business, Dangerously Elegant, Fashion Fanatic, Outfitted, Bossing It, Totally Fierce, Free Ride and Totally Obsessed, plus an opalescent highlighter in Let It Rock.",
+		"description" : "Get ready to break the rules, YOU ARE A RISK TAKER! Cross the lines in the bronzes and loudmouth pinks with the #MACGirls Risk Taker palette! #MACCosmeticsPH",
 		"img" : "assets/img/risk.jpg"
 	},
 	{
 		"product" : "Qween Supreme",
-		"description" : "Claim your crown in rich metallics under the royal influence of Qween Supreme. Featuring Eye Shadows in Magic Dust, Call Me Qweenie, About to Reign, Posh as You Want, Long Live Lustre, Tit-For-Tat, Fire Starter and Royal Caper, plus an opalescent highlighter in Insta Qween.",
+		"description" : "Do what a qween does best: rule! YOU ARE A QWEEN SUPREME! Give yourself regal treatment with the #MACGirls Qween Supreme palette! #MACCosmeticsPH",
 		"img" : "assets/img/qween.jpg"
 	},
 	{
 		"product" : "Power Hungry",
-		"description" : "Get set to run the world with a palette of powerful warm tones. Featuring Eye Shadows in Bossing It, Money Mad, Winsome Lose Some, Totally Obsessed, Hot to Trot, Something’s Fishy, Bling Mistress and Dangerously Elegant, plus an opalescent highlighter in Gimme That!",
+		"description" : "You run the world! YOU ARE POWER HUNGRY! Boss it up with the #MACGirls Power Hungry palette of take-charge hues! #MACCosmeticsPH",
 		"img" : "assets/img/power.jpg"
 	},
 	{
 		"product" : "Mischief Minx",
-		"description" : "Cause a little drama and flirt with a palette of bronze tones. Featuring Eye Shadows in V Frisky, Been There Done That, Flaming Femme, Mischief Minx, Natural Tease, She-naniganas, Schemer and Totally Trouble, plus an opalescent highlighter in Stride of Pride.",
+		"description" : "Naughty is nice. YOU ARE A MISCHIEF MINX! Get into just enough trouble with the flirty shades of the #MACGirls Mischief Minx palette! #MACCosmeticsPH",
 		"img" : "assets/img/mischief.jpg"
 	}
 
