@@ -1,7 +1,7 @@
 <?php 
 
 
-$email = htmlspecialchars($_POST['email']);
+$email = $_POST['email'];
 
 mail($email,"Test Subject","Test");
 
