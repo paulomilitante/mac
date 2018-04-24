@@ -79,8 +79,18 @@ body {
 }
 
 #prodDesc,
-.follow-ig {
+.follow-ig,
+.send-email-text {
 	font-size: 4vh;
+}
+
+.send-email-text {
+	margin-top: 5vh;
+}
+
+form {
+	margin-bottom: 5vh;
+	border: 1px solid lightgrey;
 }
 
 
