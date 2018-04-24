@@ -47,8 +47,6 @@ $('.answer').click(function(){
 			}
 		}
 
-		console.log(mostFrequent);
-
 		switch(mostFrequent) {
 			case 0:
 				window.location.href = "risk_taker.html";
