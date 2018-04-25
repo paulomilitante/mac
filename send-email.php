@@ -10,7 +10,7 @@ $image = $_POST['image'];
 
 $body = "<html>
 <body>
-<img src=$image>
+<img src='https://mac-quiz.herokuapp.com/$image'>
 <h2>$prodname</h2>
 <p>$proddesc</p>
 </body>
