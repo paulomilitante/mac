@@ -13,7 +13,7 @@ $body = "<html>
 <img src='https://mac-quiz.herokuapp.com/$image'>
 <h2>$prodname</h2>
 <p>$proddesc</p>
-<p>Follow @MACCosmeticsPH on Instagram, take your MAC Girls personality photo and <b>get a special gift from us!</b></p>
+<p>Follow @MACCosmeticsPH on Instagram!</b></p>
 </body>
 </html>";
 
