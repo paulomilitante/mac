@@ -3,23 +3,18 @@
 require "sendgrid-php/sendgrid-php.php";
 
 $email = $_POST['email'];
-// $prodname = $_POST['prodname'];
-// $proddesc = $_POST['proddesc'];
-// $image = $_POST['image'];
-
-// $body = "<html>
-// <body>
-// <img src=$image>
-// <h2>$prodname</h2>
-// <p>$proddesc</p>
-// </body>
-// </html>"
+$name = $_POST['name'];
+$prodname = $_POST['prodname'];
+$proddesc = $_POST['proddesc'];
+$image = $_POST['image'];
 
 $body = "<html>
 <body>
-TEST HTML EMAIL
+<img src=$image>
+<h2>$prodname</h2>
+<p>$proddesc</p>
 </body>
-</html>"
+</html>";
 
 $from = new SendGrid\Email("MAC Cosmetics PH","macgirlsquiz@maccosmeticsph.com");
 $subject = "Your #MACGirls Quiz Result";
