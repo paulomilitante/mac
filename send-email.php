@@ -7,7 +7,7 @@ $name = $_POST['name'];
 
 $from = new SendGrid\Email("MAC Cosmetics PH","macgirlsquiz@maccosmeticsph.com");
 $subject = "Your #MACGirls Quiz Result";
-$to = new SendGrid\Email($name, $email);
+$to = new SendGrid\Email(null, $email);
 $content = new SendGrid\Content("text/plain", "Test Email Hello!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
@@ -19,6 +19,6 @@ echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
 
-// header("location: index.html");
+header("location: index.html");
 
 ?>

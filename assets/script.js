@@ -21,6 +21,9 @@ function loadResult(resultIndex) {
 	$('#prodName').html(r.product);
 	$('#prodDesc').html(r.description);
 	$('#prodImg').attr('src',r.img);
+	$('#prodName2').val(r.product);
+	$('#prodDesc2').val(r.description);
+	$('#prodImg2').val(r.img);	
 
 }
 
