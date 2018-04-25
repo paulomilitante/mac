@@ -3,15 +3,21 @@
 require "sendgrid-php/sendgrid-php.php";
 
 $email = $_POST['email'];
-$prodname = $_POST['prodname'];
-$proddesc = $_POST['proddesc'];
-$image = $_POST['image'];
+// $prodname = $_POST['prodname'];
+// $proddesc = $_POST['proddesc'];
+// $image = $_POST['image'];
+
+// $body = "<html>
+// <body>
+// <img src=$image>
+// <h2>$prodname</h2>
+// <p>$proddesc</p>
+// </body>
+// </html>"
 
 $body = "<html>
 <body>
-<img src=$image>
-<h2>$prodname</h2>
-<p>$proddesc</p>
+TEST HTML EMAIL
 </body>
 </html>"
 
