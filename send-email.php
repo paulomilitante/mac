@@ -18,7 +18,9 @@ echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
 
-// header("location: index.html");
+echo "<script type='text/javascript'>alert('Email Sent!');</script>";
+
+header("location: index.html");
 
 
 ?>
