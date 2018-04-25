@@ -7,7 +7,7 @@ $email = $_POST['email'];
 $from = new SendGrid\Email("MAC Cosmetics PH","macgirlsquiz@maccosmeticsph.com");
 $subject = "Your #MACGirls Quiz Result";
 $to = new SendGrid\Email(null, $email);
-$content = new SendGrid\Content("text/plain", "Hello, Email!");
+$content = new SendGrid\Content("text/plain", "Test Emai Hello!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 $apiKey = getenv('SENDGRID_API_KEY');
@@ -18,7 +18,6 @@ echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
 
-// header("location: index.html");
-
+header("location: index.html");
 
 ?>
