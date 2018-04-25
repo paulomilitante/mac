@@ -4,8 +4,8 @@ require "sendgrid-php/sendgrid-php.php";
 
 $email = $_POST['email'];
 
-$from = new SendGrid\Email(null, "test@example.com");
-$subject = "Hello World from the SendGrid PHP Library!";
+$from = new SendGrid\Email(null, "MAC Cosmetics PH");
+$subject = "Your #MACGirls Quiz Result";
 $to = new SendGrid\Email(null, $email);
 $content = new SendGrid\Content("text/plain", "Hello, Email!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
@@ -18,12 +18,7 @@ echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
 
-echo "<script type='text/javascript'>
-		alert('Email Sent!');
-		window.href.location = 'index.html'
-	</script>";
-
-// header("location: index.html");
+header("location: index.html");
 
 
 ?>
