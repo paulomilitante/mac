@@ -42,14 +42,11 @@
 			</div>			
 			<form class="col s12 m8 l4 offset-m2 offset-l4" action="send-email.php" method="POST">
 				<div class="row">
-					<div class="input-field col s12 l6">
-						<input placeholder="Your Name" type="text" class="validate" name="name" required>
-					</div>
-					<div class="input-field col s12 l6">
+					<div class="input-field col s12">
 						<input placeholder="your.email@address.com" type="email" class="validate" name="email" required>
-						<input type="text" name="image" id="prodImg2" required>
-						<input type="text" name="prodname" id="prodName2" required>
-						<input type="text" name="proddesc" id="prodDesc2" required>
+						<input type="text" name="image" id="prodImg2" hidden>
+						<input type="text" name="prodname" id="prodName2" hidden>
+						<input type="text" name="proddesc" id="prodDesc2" hidden>
 					</div>
 					<div class="input-field col s12">
 						<button class="social waves-effect waves-light btn-large teal lighten-3 white-text" type="submit">Send</button>
