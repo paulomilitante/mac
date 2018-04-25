@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	padding-left:  5px;
+	padding-right:  5px;
+}
+
 @font-face {
 	font-family: Trade Gothic;
 	src: url(fonts/tradegoc.ttf);
