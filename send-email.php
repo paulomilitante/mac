@@ -18,9 +18,12 @@ echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
 
-echo "<script type='text/javascript'>alert('Email Sent!');</script>";
+echo "<script type='text/javascript'>
+		alert('Email Sent!');
+		window.href.location = 'index.html'
+	</script>";
 
-header("location: index.html");
+// header("location: index.html");
 
 
 ?>
