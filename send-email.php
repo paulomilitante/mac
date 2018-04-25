@@ -19,7 +19,7 @@ $body = "<html>
 $from = new SendGrid\Email("MAC Cosmetics PH","macgirlsquiz@maccosmeticsph.com");
 $subject = "Your #MACGirls Quiz Result";
 $to = new SendGrid\Email(null, $email);
-$content = new SendGrid\Content("text/html", $body);
+$content = new SendGrid\Content("text/html", "Test Email Hello!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 $apiKey = getenv('SENDGRID_API_KEY');
