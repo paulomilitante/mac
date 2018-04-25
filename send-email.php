@@ -4,7 +4,7 @@ require "sendgrid-php/sendgrid-php.php";
 
 $email = $_POST['email'];
 
-$from = new SendGrid\Email(null, "MAC Cosmetics PH");
+$from = new SendGrid\Email("macgirlsquiz@maccosmeticsph.com", "MAC Cosmetics PH");
 $subject = "Your #MACGirls Quiz Result";
 $to = new SendGrid\Email(null, $email);
 $content = new SendGrid\Content("text/plain", "Hello, Email!");
